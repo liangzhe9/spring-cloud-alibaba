@@ -1,0 +1,20 @@
+spring:
+  application:
+    # 服务名
+    name: service-consumer
+
+  cloud:
+    nacos:
+      discovery:
+        # 服务注册中心
+        server-addr: 192.168.6.162:8848
+
+server:
+  port: 8071
+
+# 端点健康检查
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
