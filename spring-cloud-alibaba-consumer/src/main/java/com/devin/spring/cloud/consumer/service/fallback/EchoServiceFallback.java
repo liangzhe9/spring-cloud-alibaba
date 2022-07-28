@@ -1,10 +1,10 @@
-package com.devin.spring.cloud.consumer.service.serviceImpl;
+package com.devin.spring.cloud.consumer.service.fallback;
 
 import com.devin.spring.cloud.consumer.service.IEchoService;
 import org.springframework.stereotype.Component;
 
 @Component
-public class EchoServiceImpl implements IEchoService {
+public class EchoServiceFallback implements IEchoService {
     @Override
     public String echo(String string) {
         return "你的网络有问题";
